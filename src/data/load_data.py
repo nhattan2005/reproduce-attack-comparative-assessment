@@ -36,7 +36,7 @@ def load_summeval(train_frac=0.2)->List[SimpleNamespace]:
     return output[:train_samples],  output[train_samples:]
 
 def load_topicalchat(train_frac=0.2) -> List[SimpleNamespace]:
-        data_path = "/reproduce-attack-comparative-assessment/src/data/tc_usr_data.json"
+        data_path = "/kaggle/working/reproduce-attack-comparative-assessment/src/data/tc_usr_data.json"
         with open(data_path, "r") as f:
             x = f.read()
         data = json.loads(x)
